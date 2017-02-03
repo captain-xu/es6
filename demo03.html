@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>数组扩展</title>
+</head>
+
+<body>
+</body>
+<script>
+//数组实例的entries()，keys()和values()
+	for (let index of['a', 'b'].keys()) {
+	    console.log(index);
+	}
+	// 0
+	// 1
+
+	for (let elem of['a', 'b'].values()) {
+	    console.log(elem);
+	}
+	// 'a'
+	// 'b'
+
+	for (let [index, elem] of['a', 'b'].entries()) {
+	    console.log(index, elem);
+	}
+	// 0 "a"
+	// 1 "b"
+//数组实例的includes()
+	[1, 2, 3].includes(2);     // true
+	[1, 2, 3].includes(4);     // false
+	[1, 2, NaN].includes(NaN); // true
+</script>
+
+</html>
